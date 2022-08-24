@@ -1,21 +1,36 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import {RiDownload2Fill} from 'react-icons/ri';
 
 const Navbar = () => {
     return (
-        <div className='flex flex-row justify-between items-center bg-slate-700 text-white p-4'>
+        <div className='flex flex-row justify-between items-center bg-slate-700 text-white px-16 py-4'>
             <div className='flex h-16'>
-                <img src={require('../assets/logo.png')} />
+                <Link to='/'>
+                    <img src={require('../assets/logo.png')} className='flex h-16' />
+                </Link>
             </div>
-            <div className='flex flex-row justify-between text-xl'>
-                <div className='flex mr-8'>
-                    Projects
-                </div>
-                <div className='flex mr-8'>
+            <div className='flex flex-row justify-between text-2xl'>
+                <Link to='/code' className='flex mr-16'>
+                    Code
+                </Link>
+                <Link to='/music' className='flex mr-16'>
+                    Music
+                </Link>
+                <Link to='/writing' className='flex mr-16'>
+                    Writing
+                </Link>
+                <Link to='/pockets' className='flex mr-16'>
                     Pockets
-                </div>
-                <div className='flex'>
+                </Link>
+                <a
+                    href={require('../assets/resume.pdf')}
+                    download={'Dustin Black - Resume - 8-24-22.pdf'}
+                    className='flex border-2 border-white rounded-md pl-2 pr-2 items-center cursor-pointer'
+                >
+                    <RiDownload2Fill className='mr-2' />
                     Resume
-                </div>
+                </a>
             </div>
         </div>
     );
