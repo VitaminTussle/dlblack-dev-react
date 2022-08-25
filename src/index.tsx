@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import Home from './Home/Home';
 import reportWebVitals from './reportWebVitals';
+import Code from './Code/Code';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,6 +13,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home />} />
+      <Route path='/code' element={<Code />} />
     </Routes>
   </BrowserRouter>
 );

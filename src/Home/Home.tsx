@@ -58,7 +58,7 @@ const Home = () => {
                         </p>
                         <br />
                         <p>
-
+                            If you are interested in Deuce, feel free to download his resume from the navbar to learn more about his career. Otherwise, following are links to his relevant socials.
                         </p>
                     </div>
                 </div>
