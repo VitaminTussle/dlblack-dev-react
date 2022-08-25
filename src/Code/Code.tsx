@@ -1,23 +1,23 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import './Code.css';
-import ProjectRow from './ProjectRow';
-import { ProjectRowObject } from './types';
+import Project from './Project';
+import { ProjectObject } from './types';
 
 const Code = () => {
     // this array will eventually be fetched from an API
-    const projects: ProjectRowObject[] = [
+    const projects: ProjectObject[] = [
         {
             name: 'Personal Website',
-            image: '../assets/personal_website.png',
+            image: '../assets/logo.png',
             status: 'Ongoing',
-            description: "You're on it now! This project link describes everything to do with Deuce Black's personal website.",
+            description: "You're on it now! This project's link describes everything to do with Deuce Black's personal website.",
             technologies: ['React', 'TypeScript', 'Node', 'Tailwind'],
             link: 'https://github.com/VitaminTussle/dlblack-dev-react'
         },
         {
             name: 'Arkadia Website and Administration App',
-            image: '../assets/arkadia.png',
+            image: null,
             status: 'Ongoing',
             description: 'The official public website for a beloved arcade local to Fayetteville, AR: Arkadia Retrocade. ' +
                 'Features game cabinet cataloging and statuses, in-jokes from the 90s internet, a full-fledged API, and a companion administration app to allow the owner to update relevant information.',
@@ -26,21 +26,12 @@ const Code = () => {
         },
         {
             name: 'Impact Alarm',
-            image: '../assets/impact_alarm.png',
+            image: null,
             status: 'Complete!',
-            description: "A hackathon-winning project where a phone app scrapes for the user's alarms, and if they don't turn their alarms off fast enough, it triggers a motorized Nerf blaster to shoot them in the face." +
-                "Y'know, for coercion.",
+            description: "A hackathon-winning project where a phone app scrapes for the user's alarms, and if they don't turn their alarms off fast enough, it triggers a motorized Nerf blaster to shoot them in the face. " +
+                "Y'know, as coercion. If you're not getting out of bed quick enough, this is what you've got coming, right?",
             technologies: ['Java', 'Android Studio', 'Raspberry Pi', 'Python', 'Physical Wiring/Soldering'],
-            link: [
-                {
-                    link: 'https://github.com/Team-Goose/impact-alarm-android',
-                    label: 'Android App Repo'
-                },
-                {
-                    link: 'https://github.com/Team-Goose/Impact-Alarm-Web-Server',
-                    label: 'Python Web Server Repo'
-                }
-            ]
+            link: 'https://github.com/Team-Goose/impact-alarm-android'
         }
     ];
 
@@ -53,31 +44,7 @@ const Code = () => {
                         Code Projects
                     </p>
                     <br />
-                    <table className='w-full table-fixed'>
-                        <thead>
-                            <td className='border-solid border-2 border-cyan-600 px-2' style={{ width: '10%' }}>
-                                Name
-                            </td>
-                            <td className='border-solid border-2 border-cyan-600 text-center px-2' style={{ width: '10%' }}>
-                                Image
-                            </td>
-                            <td className='border-solid border-2 border-cyan-600 text-center px-2' style={{ width: '10%' }}>
-                                Status
-                            </td>
-                            <td className='border-solid border-2 border-cyan-600 w-1/2 px-2'>
-                                Description
-                            </td>
-                            <td className='border-solid border-2 border-cyan-600 px-2' style={{ width: '10%' }}>
-                                Technologies
-                            </td>
-                            <td className='border-solid border-2 border-cyan-600 text-center px-2' style={{ width: '10%' }}>
-                                Link
-                            </td>
-                        </thead>
-                        <tbody>
-                            {projects.map(p => <ProjectRow data={p} />)}
-                        </tbody>
-                    </table>
+                    {projects.map(p => <Project key={p.name} data={p} />)}
                 </div>
             </div>
         </div>

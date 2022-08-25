@@ -1,17 +1,12 @@
-export interface LinkInfo {
-    link: string,
-    label: string
-}
-
-export interface ProjectRowObject {
+export interface ProjectObject {
     name: string,
-    image: string,
+    image: string | null,
     status: 'Ongoing' | 'Complete!' | 'Terminated'
     description: string,
     technologies: string[],
-    link: string | LinkInfo[]
+    link: string
 }
 
-export interface ProjectRowProps {
-    data: ProjectRowObject
+export interface ProjectProps {
+    data: ProjectObject
 }
