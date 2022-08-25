@@ -20,7 +20,7 @@ const Code = () => {
             image: null,
             status: 'Ongoing',
             description: 'The official public website for a beloved arcade local to Fayetteville, AR: Arkadia Retrocade. ' +
-                'Features game cabinet cataloging and statuses, in-jokes from the 90s internet, a full-fledged API, and a companion administration app to allow the owner to update relevant information.',
+                'Features game cabinet cataloging and statuses, in-jokes from the 90s internet, a full-fledged API, and a companion administration app to allow the owner to update relevant information on-demand.',
             technologies: ['Vanilla HTML', 'Vanilla CSS', 'Vanilla JavaScript', 'jQuery', 'Java', 'Spring Boot', 'Python', 'Flutter', 'Dart'],
             link: 'https://github.com/Arkadia-Development'
         },
