@@ -28,7 +28,8 @@ const Code = () => {
             name: 'Impact Alarm',
             image: '../assets/impact_alarm.png',
             status: 'Complete!',
-            description: "A hackathon-winning project where a phone app scrapes for the user's alarms, and if they don't turn their alarms off fast enough, it triggers a motorized Nerf blaster to shoot them in the face.",
+            description: "A hackathon-winning project where a phone app scrapes for the user's alarms, and if they don't turn their alarms off fast enough, it triggers a motorized Nerf blaster to shoot them in the face." +
+                "Y'know, for coercion.",
             technologies: ['Java', 'Android Studio', 'Raspberry Pi', 'Python', 'Physical Wiring/Soldering'],
             link: [
                 {
@@ -46,30 +47,30 @@ const Code = () => {
     return (
         <div>
             <Navbar/>
-            <div className='flex w-full' style={{ height: 'calc(100vh - 96px)' }}>
-                <div className='flex flex-col items-center mr-32 ml-32 mt-16 h-full w-full text-white text-xl'>
+            <div className='flex w-full'>
+                <div className='flex flex-col mr-32 ml-32 mt-16 h-full w-full text-white text-xl'>
                     <p className='text-5xl'>
                         Code Projects
                     </p>
                     <br />
                     <table className='w-full table-fixed'>
                         <thead>
-                            <td className='border-solid border-2 border-cyan-600 text-center' style={{ width: '10%' }}>
+                            <td className='border-solid border-2 border-cyan-600 px-2' style={{ width: '10%' }}>
                                 Name
                             </td>
-                            <td className='border-solid border-2 border-cyan-600 text-center' style={{ width: '10%' }}>
+                            <td className='border-solid border-2 border-cyan-600 text-center px-2' style={{ width: '10%' }}>
                                 Image
                             </td>
-                            <td className='border-solid border-2 border-cyan-600 text-center' style={{ width: '10%' }}>
+                            <td className='border-solid border-2 border-cyan-600 text-center px-2' style={{ width: '10%' }}>
                                 Status
                             </td>
-                            <td className='border-solid border-2 border-cyan-600 text-center w-1/2'>
+                            <td className='border-solid border-2 border-cyan-600 w-1/2 px-2'>
                                 Description
                             </td>
-                            <td className='border-solid border-2 border-cyan-600 text-center' style={{ width: '10%' }}>
+                            <td className='border-solid border-2 border-cyan-600 px-2' style={{ width: '10%' }}>
                                 Technologies
                             </td>
-                            <td className='border-solid border-2 border-cyan-600 text-center' style={{ width: '10%' }}>
+                            <td className='border-solid border-2 border-cyan-600 text-center px-2' style={{ width: '10%' }}>
                                 Link
                             </td>
                         </thead>

@@ -4,14 +4,14 @@ import { ProjectRowProps } from './types';
 const ProjectRow: FC<ProjectRowProps> = ({data}) => {
     return (
         <tr>
-            <td className='border-solid border-2 border-cyan-600 text-center' style={{ width: '10%' }}>
+            <td className='border-solid border-2 border-cyan-600 px-2' style={{ width: '10%' }}>
                 {data.name}
             </td>
-            <td className='border-solid border-2 border-cyan-600 text-center' style={{ width: '10%' }}>
+            <td className='border-solid border-2 border-cyan-600 text-center px-2' style={{ width: '10%' }}>
                 {/* <img src={require(data.image)} /> */}
             </td>
             <td
-                className='border-solid border-2 border-cyan-600 text-center'
+                className='border-solid border-2 border-cyan-600 text-center px-2'
                 style={{
                     width: '10%',
                     color: data.status === 'Complete!'
@@ -23,10 +23,10 @@ const ProjectRow: FC<ProjectRowProps> = ({data}) => {
             >
                 {data.status}
             </td>
-            <td className='border-solid border-2 border-cyan-600 text-center w-1/2'>
+            <td className='border-solid border-2 border-cyan-600 w-1/2 px-2'>
                 {data.description}
             </td>
-            <td className='border-solid border-2 border-cyan-600 text-center' style={{ width: '10%' }}>
+            <td className='border-solid border-2 border-cyan-600 px-2' style={{ width: '10%' }}>
                 {data.technologies.reduce((prev, curr, ind, arr) => {
                     let construct = prev;
                     if (ind < arr.length - 2) {
@@ -39,7 +39,7 @@ const ProjectRow: FC<ProjectRowProps> = ({data}) => {
                     return construct;
                 }, '')}
             </td>
-            <td className='flex-col border-solid border-2 border-cyan-600 text-center items-center' style={{ width: '10%' }}>
+            <td className='flex-col border-solid border-2 border-cyan-600 text-center items-center px-2' style={{ width: '10%' }}>
                 {
                     Array.isArray(data.link)
                         ? data.link.map((l, ind, arr) => (
