@@ -39,7 +39,7 @@ const Home = () => {
     const pocketsContent = `Deuce has many controversial opinions on food. He will be taking no questions.`;
 
     return (
-        <div className='mb-8'>
+        <div className='mb-16'>
             <Navbar/>
             <div className='flex' >
                 <div className='flex flex-row justify-between mx-32 mt-16 h-full'>
@@ -62,7 +62,7 @@ const Home = () => {
                                     /VitaminTussle
                                 </a>
                             </div>
-                            <div className='mb-4'>
+                            <div>
                                 <a href='https://www.linkedin.com/in/dlblack-dev/' target='_blank' className='flex flex-row items-center hover:underline'>
                                     <img src={images['linkedin_logo_white.png']} className='w-1/4 mr-4' />
                                     /dlblack-dev

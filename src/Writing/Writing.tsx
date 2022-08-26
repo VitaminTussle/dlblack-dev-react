@@ -51,7 +51,7 @@ const Writing = () => {
     ];
 
     return (
-        <div className='mb-8'>
+        <div className='mb-16'>
             <Navbar/>
             <div className='flex w-full'>
                 <div className='flex flex-col mr-32 ml-32 mt-16 h-full w-full text-white text-xl'>

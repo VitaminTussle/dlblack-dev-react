@@ -126,16 +126,16 @@ const Pockets = () => {
                 <p className='flex'>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     A Pocket is defined as any food with structural starch that you eat with your hands, such that if the starch were removed,
-                    it would fundamentally change the food into a completely different or unstructured food. Q.E.D. ▢
+                    it would fundamentally change the food into a completely different or unstructured food. That's it.
                 </p>
                 <br />
                 <p className='flex'>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    ...and that's it. Isn't that simple? Let hot dogs and sandwiches be hot dogs and sandwiches.
+                    Isn't that simple? Let hot dogs and sandwiches be hot dogs and sandwiches.
                     Whatever you would call them at first glance is fine. Their connection comes in the fact that they are both Pockets.
                     A gyro is a Pocket, regardless of the degree to which it is enclosed. An Uncrustable is a Pocket.
                     Pizza is a Pocket. A quesadilla is a pocket. A taco is a pocket. Pigs in a blanket? Pockets.
-                    Falafel pitas? Pockets. Burritos? Pockets. Pop-Tarts? Pockets. Dumplings? Pockets. Hot Pockets? It's in the name!
+                    Falafel pitas? Pockets. Burritos? Pockets. Pop-Tarts? Pockets. Dumplings? Pockets. Hot Pockets? It's in the name! Q.E.D. ▢
                 </p>
                 <br />
                 <p className='flex'>
@@ -149,9 +149,10 @@ const Pockets = () => {
                     I admit, this theory is not without its flaws. Its subjective nature means that different people may think different things are or are not Pockets.
                     Jay and I have certainly come up with several strange edge cases.
                     Chicken nuggets are not Pockets, because if you remove the breading, you still have a chicken nugget. The starch is not structural.
-                    Sushi is not a pocket for several reasons. First of all, traditional sushi has seaweed on the outside, not rice.
-                    Second of all, you can remove the rice and still have perfectly good sushi. It's just probably a little crunchier.
-                    Third, although it is traditionally eaten by hand, modern common practice is to eat it with chopsticks. Sushi is not a pocket.
+                    Maki (roll) sushi is not a pocket for several reasons. First of all, traditional maki sushi has seaweed on the outside, not rice.
+                    Second of all, you can remove the rice and still have perfectly good maki. It's just probably a little crunchier.
+                    Third, although it is traditionally eaten by hand, modern common practice is to eat it with chopsticks.
+                    Maki sushi is not a Pocket, but nigiri sushi, being defined by a bed of rice and a finger food, is a Pocket.
                     Finally, a corn dog is not a Pocket. We went back and forth on this one, but since you hold it by the stick and not the food itself,
                     and a corn-less corndog is still recognizable (even if it's more of a weiner on a stick), it's not a Pocket.
                 </p>
@@ -161,7 +162,7 @@ const Pockets = () => {
                     I truly hope that the wars over hot dogs, sandwiches, and tacos can cease knowing that the Pocket theory will take in all contenders.
                     Rather than end relationships, we hope to unite people under peace and a love for Pockets.
                     Please spread this theory to your friends, and together, we can take down the tyrannical cube theory to become the prevailing school of sandwich discourse.
-                    No more in-fighting, only scholarly debate to an objective decision on whether each food is or is not a pocket.
+                    No more in-fighting, only scholarly debate to an objective decision on whether each food is or is not a Pocket.
                 </p>
             </div>
         </div>
