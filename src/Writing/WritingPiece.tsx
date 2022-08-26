@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { WritingPieceProps } from './types';
-import { images } from '../utils/images';
 import { pdfs } from '../utils/pdfs';
 import {RiDownload2Fill} from 'react-icons/ri';
 

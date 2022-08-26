@@ -44,7 +44,7 @@ const Home = () => {
             <div className='flex' >
                 <div className='flex flex-row justify-between mx-32 mt-16 h-full'>
                     <div className='w-1/3'>
-                        <img src={images['me.jpg']} alt='professional photo of deuce' className='flex' />
+                        <img src={images['me.jpg']} alt='deuce dressed and posed professionally' className='flex' />
                     </div>
                     <div className='w-1/2 h-full text-white text-xl'>
                         <InfoContainer label='BIO' content={bioContent} />
