@@ -13,7 +13,7 @@ const Project: FC<ProjectProps> = ({data}) => {
     return (
         <div className='flex flex-row items-center my-8'>
             <div className='flex mr-8' style={{ width: '12.5%' }}>
-                <img src={images[imageName]} />
+                <img src={images[imageName]} alt={imageName} />
             </div>
             <div className='flex flex-col w-full'>
                 <div className='flex flex-row justify-between text-3xl mb-2'>
@@ -48,8 +48,8 @@ const Project: FC<ProjectProps> = ({data}) => {
                         }, '')}
                     </div>
                     <div className='flex'>
-                        <a href={data.link} target='_blank' className='w-10'>
-                            <img src={images['github_logo_white.png']} className='w-10' />
+                        <a href={data.link} target='_blank' rel='noreferrer' className='w-10'>
+                            <img src={images['github_logo_white.png']} alt='github logo' className='w-10' />
                         </a>
                     </div>
                 </div>

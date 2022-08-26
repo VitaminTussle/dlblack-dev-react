@@ -28,8 +28,8 @@ const MusicPiece: FC<MusicPieceProps> = ({ data }) => {
                     </span>
                     {data.key}
                     {' '}|{' '}
-                    <a href={data.link} target='_blank' className='flex flex-row items-center hover:underline'>
-                        <img src={images['musescore_logo_white.png']} className='w-8 mx-1' />
+                    <a href={data.link} target='_blank' rel='noreferrer' className='flex flex-row items-center hover:underline'>
+                        <img src={images['musescore_logo_white.png']} alt='musescore logo' className='w-8 mx-1' />
                         <p className='flex'>
                             View and listen on Musescore
                         </p>

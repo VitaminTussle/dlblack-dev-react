@@ -44,7 +44,7 @@ const Home = () => {
             <div className='flex' >
                 <div className='flex flex-row justify-between mx-32 mt-16 h-full'>
                     <div className='w-1/3'>
-                        <img src={images['me.jpg']} className='flex' />
+                        <img src={images['me.jpg']} alt='professional photo of deuce' className='flex' />
                     </div>
                     <div className='w-1/2 h-full text-white text-xl'>
                         <InfoContainer label='BIO' content={bioContent} />
@@ -57,14 +57,14 @@ const Home = () => {
                         </p>
                         <div className='w-1/3 m-auto items-center'>
                             <div className='mb-4'>
-                                <a href='https://github.com/VitaminTussle' target='_blank' className='flex flex-row items-center hover:underline'>
-                                    <img src={images['github_logo_white.png']} className='w-1/4 mr-4' />
+                                <a href='https://github.com/VitaminTussle' target='_blank' rel='noreferrer' className='flex flex-row items-center hover:underline'>
+                                    <img src={images['github_logo_white.png']} alt='github logo' className='w-1/4 mr-4' />
                                     /VitaminTussle
                                 </a>
                             </div>
                             <div>
-                                <a href='https://www.linkedin.com/in/dlblack-dev/' target='_blank' className='flex flex-row items-center hover:underline'>
-                                    <img src={images['linkedin_logo_white.png']} className='w-1/4 mr-4' />
+                                <a href='https://www.linkedin.com/in/dlblack-dev/' target='_blank' rel='noreferrer' className='flex flex-row items-center hover:underline'>
+                                    <img src={images['linkedin_logo_white.png']} alt='linkedin logo' className='w-1/4 mr-4' />
                                     /dlblack-dev
                                 </a>
                             </div>

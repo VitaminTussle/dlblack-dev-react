@@ -53,8 +53,8 @@ const Music = () => {
                         <p className='text-5xl'>
                             Sheet Music
                         </p>
-                        <a href='https://musescore.com/user/29186179' target='_blank' className='flex flex-row items-center hover:underline'>
-                            <img src={images['musescore_logo_white.png']} className='flex w-12 mr-4' />
+                        <a href='https://musescore.com/user/29186179' target='_blank' rel='noreferrer' className='flex flex-row items-center hover:underline'>
+                            <img src={images['musescore_logo_white.png']} alt='musescore logo' className='flex w-12 mr-4' />
                             <p className='flex'>
                                 @DeuceBlack
                             </p>

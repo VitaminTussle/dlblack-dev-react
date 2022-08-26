@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className='flex flex-row justify-between items-center bg-slate-700 text-white px-16 py-4'>
             <div className='flex h-16'>
                 <Link to='/'>
-                    <img src={images['logo.png']} className='flex h-16' />
+                    <img src={images['logo.png']} alt='dlblack.dev logo' className='flex h-16' />
                 </Link>
             </div>
             <div className='flex flex-row justify-between text-2xl'>
