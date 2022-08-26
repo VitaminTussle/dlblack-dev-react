@@ -57,13 +57,13 @@ const Home = () => {
                         </p>
                         <div className='w-1/3 m-auto items-center'>
                             <div className='mb-4'>
-                                <a href='https://github.com/VitaminTussle' className='flex flex-row items-center hover:underline'>
+                                <a href='https://github.com/VitaminTussle' target='_blank' className='flex flex-row items-center hover:underline'>
                                     <img src={images['github_logo_white.png']} className='w-1/4 mr-4' />
                                     /VitaminTussle
                                 </a>
                             </div>
                             <div className='mb-4'>
-                                <a href='https://www.linkedin.com/in/dlblack-dev/' className='flex flex-row items-center hover:underline'>
+                                <a href='https://www.linkedin.com/in/dlblack-dev/' target='_blank' className='flex flex-row items-center hover:underline'>
                                     <img src={images['linkedin_logo_white.png']} className='w-1/4 mr-4' />
                                     /dlblack-dev
                                 </a>

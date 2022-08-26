@@ -9,7 +9,7 @@ const Code = () => {
     const projects: ProjectObject[] = [
         {
             name: 'Personal Website',
-            image: '../assets/logo.png',
+            image: 'logo.png',
             status: 'Ongoing',
             description: "You're on it now! This project's link describes everything to do with Deuce Black's personal website.",
             technologies: ['React', 'TypeScript', 'Node', 'Tailwind'],
@@ -44,7 +44,14 @@ const Code = () => {
                         Code Projects
                     </p>
                     <br />
-                    {projects.map(p => <Project key={p.name} data={p} />)}
+                    {projects.map((p, ind, arr) => (
+                        <div className='w-full items-center'>
+                            <Project key={p.name} data={p} />
+                            {ind < arr.length - 1 && (
+                                <div className='border border-slate-700 w-4/5 m-auto' />
+                            )}
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {RiDownload2Fill} from 'react-icons/ri';
 import { images } from '../utils/images';
+import { pdfs } from '../utils/pdfs';
 
 const Navbar = () => {
     return (
@@ -25,9 +26,9 @@ const Navbar = () => {
                     Pockets
                 </Link>
                 <a
-                    href={require('../assets/resume.pdf')}
+                    href={pdfs['resume.pdf']}
                     download={'Dustin Black - Resume - 8-24-22.pdf'}
-                    className='flex border-2 border-white rounded-md pl-2 pr-2 items-center cursor-pointer'
+                    className='flex border-2 border-white rounded-md px-2 items-center cursor-pointer'
                 >
                     <RiDownload2Fill className='mr-2' />
                     Resume

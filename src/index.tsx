@@ -5,6 +5,7 @@ import './index.css';
 import Home from './Home/Home';
 import reportWebVitals from './reportWebVitals';
 import Code from './Code/Code';
+import Music from './Music/Music';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -14,6 +15,7 @@ root.render(
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/code' element={<Code />} />
+      <Route path='/music' element={<Music />} />
     </Routes>
   </BrowserRouter>
 );
