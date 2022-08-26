@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import Code from './Code/Code';
 import Music from './Music/Music';
 import Writing from './Writing/Writing';
+import Pockets from './Pockets/Pockets';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -18,6 +19,7 @@ root.render(
       <Route path='/code' element={<Code />} />
       <Route path='/music' element={<Music />} />
       <Route path='/writing' element={<Writing />} />
+      <Route path='/pockets' element={<Pockets />} />
     </Routes>
   </BrowserRouter>
 );
