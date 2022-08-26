@@ -17,7 +17,7 @@ const Code = () => {
         },
         {
             name: 'Arkadia Website and Administration App',
-            image: null,
+            image: 'arkadia.png',
             status: 'Ongoing',
             description: 'The official public website for a beloved arcade local to Fayetteville, AR: Arkadia Retrocade. ' +
                 'Features game cabinet cataloging and statuses, in-jokes from the 90s internet, a full-fledged API, and a companion administration app to allow the owner to update relevant information on-demand.',
@@ -26,7 +26,7 @@ const Code = () => {
         },
         {
             name: 'Impact Alarm',
-            image: null,
+            image: 'impact_alarm.jpg',
             status: 'Complete!',
             description: "A hackathon-winning project where a phone app scrapes for the user's alarms, and if they don't turn their alarms off fast enough, it triggers a motorized Nerf blaster to shoot them in the face. " +
                 "Y'know, as coercion. If you're not getting out of bed quick enough, this is what you've got coming, right?",
@@ -40,8 +40,15 @@ const Code = () => {
             <Navbar/>
             <div className='flex w-full'>
                 <div className='flex flex-col mr-32 ml-32 mt-16 h-full w-full text-white text-xl'>
-                    <p className='text-5xl'>
+                    <p className='text-5xl mb-2'>
                         Code Projects
+                    </p>
+                    <p className='flex flex-row'>
+                        This list is of course non-exhaustive. For more projects, check out my&nbsp;
+                        <a href='https://github.com/VitaminTussle' target='_blank' rel='noreferrer' className='flex flex-row items-center underline'>
+                            main Github page
+                        </a>
+                        &nbsp;and associated Github Organizations.
                     </p>
                     <br />
                     {projects.map((p, ind, arr) => (
