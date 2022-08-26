@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { PieceProps } from './types';
+import { MusicPieceProps } from './types';
 import { images } from '../utils/images';
 import { pdfs } from '../utils/pdfs';
 import {RiDownload2Fill} from 'react-icons/ri';
@@ -10,7 +10,7 @@ const colors = {
     'Reimagining': '#2dd4bf'  // tailwind teal 400
 }
 
-const Piece: FC<PieceProps> = ({ data }) => {
+const MusicPiece: FC<MusicPieceProps> = ({ data }) => {
     return (
         <div className='flex flex-col my-8'>
             <div className='flex flex-row justify-between text-3xl mb-2'>
@@ -50,4 +50,4 @@ const Piece: FC<PieceProps> = ({ data }) => {
     );
 }
 
-export default Piece;
+export default MusicPiece;

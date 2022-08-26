@@ -1,12 +1,12 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
-import Piece from './Piece';
+import MusicPiece from './MusicPiece';
 import { images } from '../utils/images';
-import { MusicPiece } from './types';
+import { MusicPieceObj } from './types';
 
 const Music = () => {
     // this array will eventually be fetched from an API
-    const pieces: MusicPiece[] = [
+    const pieces: MusicPieceObj[] = [
         {
             title: 'Where is home?',
             key: 'B Major',
@@ -51,7 +51,7 @@ const Music = () => {
                 <div className='flex flex-col mr-32 ml-32 mt-16 h-full w-full text-white text-xl'>
                     <div className='flex items-center justify-between mb-8'>
                         <p className='text-5xl'>
-                            Sheet Music Arrangements
+                            Sheet Music
                         </p>
                         <a href='https://musescore.com/user/29186179' target='_blank' className='flex flex-row items-center hover:underline'>
                             <img src={images['musescore_logo_white.png']} className='flex w-12 mr-4' />
@@ -62,7 +62,7 @@ const Music = () => {
                     </div>
                     {pieces.map((p, ind, arr) => (
                         <div className='w-full items-center'>
-                            <Piece data={p} />
+                            <MusicPiece data={p} />
                             {ind < arr.length - 1 && (
                                 <div className='border border-slate-700 w-4/5 m-auto' />
                             )}

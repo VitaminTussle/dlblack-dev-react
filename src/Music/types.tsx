@@ -1,4 +1,4 @@
-export interface MusicPiece {
+export interface MusicPieceObj {
     title: string,
     key: string,
     origin: 'Original' | 'Arrangement' | 'Reimagining',
@@ -6,6 +6,6 @@ export interface MusicPiece {
     download: string | null
 }
 
-export interface PieceProps {
-    data: MusicPiece
+export interface MusicPieceProps {
+    data: MusicPieceObj
 }
