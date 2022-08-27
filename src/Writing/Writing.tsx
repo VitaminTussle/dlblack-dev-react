@@ -54,14 +54,14 @@ const Writing = () => {
         <div className='mb-16'>
             <Navbar/>
             <div className='flex w-full'>
-                <div className='flex flex-col mr-32 ml-32 mt-16 h-full w-full text-white text-xl'>
+                <div className='flex flex-col mx-16 lg:mx-32 mt-16 h-full w-full text-white text-xl'>
                     <div className='flex items-center justify-between mb-8'>
                         <p className='text-5xl'>
                             Writing Pieces
                         </p>
                     </div>
                     {pieces.map((p, ind, arr) => (
-                        <div className='w-full items-center'>
+                        <div key={p.title} className='w-full items-center'>
                             <WritingPiece data={p} />
                             {ind < arr.length - 1 && (
                                 <div className='border border-slate-700 w-4/5 m-auto' />

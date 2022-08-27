@@ -48,9 +48,9 @@ const Music = () => {
         <div className='mb-16'>
             <Navbar/>
             <div className='flex w-full'>
-                <div className='flex flex-col mr-32 ml-32 mt-16 h-full w-full text-white text-xl'>
-                    <div className='flex items-center justify-between mb-8'>
-                        <p className='text-5xl'>
+                <div className='flex flex-col mx-16 xl:mx-32 mt-16 h-full w-full text-white text-xl'>
+                    <div className='flex flex-col md:flex-row items-center justify-between mb-8'>
+                        <p className='text-5xl mb-2 md:mb-0'>
                             Sheet Music
                         </p>
                         <a href='https://musescore.com/user/29186179' target='_blank' rel='noreferrer' className='flex flex-row items-center hover:underline'>
@@ -61,7 +61,7 @@ const Music = () => {
                         </a>
                     </div>
                     {pieces.map((p, ind, arr) => (
-                        <div className='w-full items-center'>
+                        <div key={p.title} className='w-full items-center'>
                             <MusicPiece data={p} />
                             {ind < arr.length - 1 && (
                                 <div className='border border-slate-700 w-4/5 m-auto' />

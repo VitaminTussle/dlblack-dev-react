@@ -42,11 +42,11 @@ const Home = () => {
         <div className='mb-16'>
             <Navbar/>
             <div className='flex' >
-                <div className='flex flex-row justify-between mx-32 mt-16 h-full'>
-                    <div className='w-1/3'>
+                <div className='flex flex-col xl:flex-row items-center justify-between xl:mx-32 mt-16 h-full'>
+                    <div className='w-1/2 xl:w-1/3 mb-8'>
                         <img src={images['me.jpg']} alt='deuce dressed and posed professionally' className='flex' />
                     </div>
-                    <div className='w-1/2 h-full text-white text-xl'>
+                    <div className='w-3/4 xl:w-1/2 h-full text-white text-xl'>
                         <InfoContainer label='BIO' content={bioContent} />
                         <InfoContainer label='CODE' content={codeContent} />
                         <InfoContainer label='MUSIC' content={musicContent} />

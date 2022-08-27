@@ -19,11 +19,11 @@ const Pockets = () => {
                     CKETS
                 </span>
             </div>
-            <div className='flex flex-col text-xl mx-96'>
-                <p className='flex justify-center italic'>
+            <div className='flex flex-col text-xl mx-16 lg:mx-32 xl:mx-64 2xl:mx-96'>
+                <p className='flex justify-center text-center italic mb-4'>
                     An essay on the upheaval of food psychology and a rebuttal of the cube rule of food by Deuce Black
                 </p>
-                <p className='flex justify-center italic mb-16'>
+                <p className='flex justify-center text-center italic mb-16'>
                     Originally ideated alongside Jay Horner
                 </p>
                 <p className='flex'>

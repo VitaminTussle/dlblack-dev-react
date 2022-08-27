@@ -12,7 +12,7 @@ const Navbar = () => {
                     <img src={images['logo.png']} alt='dlblack.dev logo' className='flex h-16' />
                 </Link>
             </div>
-            <div className='flex flex-row justify-between text-2xl'>
+            <div className='flex flex-row justify-between text-2xl w-2/5 lg:w-fit overflow-x-auto pb-2 lg:pb-0'>
                 <Link to='/code' className='flex mr-16'>
                     Code
                 </Link>

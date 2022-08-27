@@ -16,7 +16,7 @@ const WritingPiece: FC<WritingPieceProps> = ({ data }) => {
                 <p className='flex font-semibold italic'>
                     {data.title}
                 </p>
-                <p className='flex' style={{color: colors[data.type]}}>
+                <p className='flex text-right min-w-max' style={{color: colors[data.type]}}>
                     {data.type}
                 </p>
             </div>
@@ -27,7 +27,7 @@ const WritingPiece: FC<WritingPieceProps> = ({ data }) => {
                 {data.download &&
                     <a
                         href={pdfs[data.download]}
-                        className='flex flex-row border-2 border-white rounded-md px-2 items-center cursor-pointer'
+                        className='flex flex-row border-2 border-white rounded-md px-2 ml-2 min-w-max h-fit items-center cursor-pointer'
                         download={data.title}
                     >
                         <RiDownload2Fill className='mr-2' />
