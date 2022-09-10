@@ -3,7 +3,7 @@ export interface WritingPieceObj {
     type: 'Short Story' | 'Poem' | 'Flash Fiction',
     synopsis: string | null,
     warning: string | null,
-    download: string
+    download: string | null
 }
 
 export interface WritingPieceProps {
