@@ -48,7 +48,7 @@ const NonogramGrid: FC<NonogramGridProps> = ({ data }) => {
             }
         }
         setPuzzleSolved(allMatch);
-    }, [solution.toString(), data.key.toString()]);
+    }, [solution, data.key]);
 
     return (
         <div className='flex flex-col m-auto'>
