@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {RiDownload2Fill} from 'react-icons/ri';
+import { RiDownload2Fill } from 'react-icons/ri';
 import { images } from '../utils/images';
 import { pdfs } from '../utils/pdfs';
 
@@ -24,6 +24,9 @@ const Navbar = () => {
                 </Link>
                 <Link to='/pockets' className='flex mr-16'>
                     Pockets
+                </Link>
+                <Link to='/nonogram' className='flex mr-16'>
+                    Nonogram
                 </Link>
                 <a
                     href={pdfs['resume.pdf']}

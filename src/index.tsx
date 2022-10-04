@@ -8,6 +8,7 @@ import Code from './Code/Code';
 import Music from './Music/Music';
 import Writing from './Writing/Writing';
 import Pockets from './Pockets/Pockets';
+import Nonogram from './Nonogram/Nonogram';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -20,6 +21,7 @@ root.render(
       <Route path='/music' element={<Music />} />
       <Route path='/writing' element={<Writing />} />
       <Route path='/pockets' element={<Pockets />} />
+      <Route path='/nonogram' element={<Nonogram />} />
     </Routes>
   </BrowserRouter>
 );
