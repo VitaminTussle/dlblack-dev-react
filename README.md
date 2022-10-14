@@ -1,6 +1,6 @@
 # DLBlack.dev - Portfolio Site
 
-DLBlack.dev serves as living, breathing proof of my programming prowess. It will continually be a work in progress as I come up with more things to add, and as I decide to experiment with or learn new technologies. This is ground zero, baby!
+[DLBlack.dev](https://dlblack.dev) serves as living, breathing proof of my programming prowess. It will continually be a work in progress as I come up with more things to add, and as I decide to experiment with or learn new technologies. This is ground zero, baby!
 
 ## Site structure
 
