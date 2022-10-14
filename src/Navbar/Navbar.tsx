@@ -30,7 +30,7 @@ const Navbar = () => {
                 </Link>
                 <a
                     href={pdfs['resume.pdf']}
-                    download={'Dustin Black - Resume - 8-24-22.pdf'}
+                    download={'ResumeDustinBlack.pdf'}
                     className='flex border-2 border-white rounded-md px-2 items-center cursor-pointer'
                 >
                     <RiDownload2Fill className='mr-2' />
