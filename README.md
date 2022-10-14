@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+# DLBlack.dev - Portfolio Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+DLBlack.dev serves as living, breathing proof of my programming prowess. It will continually be a work in progress as I come up with more things to add, and as I decide to experiment with or learn new technologies. This is ground zero, baby!
 
-## Available Scripts
+## Site structure
 
-In the project directory, you can run:
+This app's paging is managed by the `react-router-dom` library. It has six pages, and is built with responsive design and user experience in mind (though mobile readiness comes after desktop completion). The nonogram page design was even explicitly approved by a UX-master-certified engineer.
 
-### `npm start`
+### Home
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The `home` page includes a picture of me and a brief summary of the type of content on each of the other pages. At the bottom are links to my professional socials. The summary dropdowns are implemented with careful state management and CSS transitions.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Code
 
-### `npm test`
+The `code` page is a componentized list of some of my programming projects. The list is non-exhaustive, but it shows some of the breadth and diversity of my skills. Each project is associated with a Github link for easy code viewing.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Music
 
-### `npm run build`
+The `music` page is a componentized list of my public music endeavors. It contains basic sheet music projects at the moment, but as I work toward production and publication, more official _songs_ will be listed as well.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Writing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The `writing` page is a componentized list of my various creative writing projects. It includes poems, short stories, and flash fiction. Each includes an associated download link if it is not currently under review at a literary magazine.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Pockets
 
-### `npm run eject`
+The `pockets` page is both my experimentation with `three.js` in its on-screen title, and a persuasive essay to convince people that the hot dogs and sandwiches debate is meaningless and we should just give them and similar foods a superclass to relate them.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Nonogram
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The `nonogram` page is my ground-up reconstruction of the nonogram/picross sudoku-esque puzzle game. It currently includes one solvable puzzle, but will soon include more and a submit-your-own-puzzle section. The submission section will act as my first expedition into Machine Learning as I plan to build a model that predicts if a person's puzzle contains... _inappropriate_ imagery. Not to laugh at. I swear. Kinda. Definitely mostly to keep the dataset as clean as possible. Mostly.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Running the project locally
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This project was built with `node 16.17.0^` and `npm 8.15.0^`, and those are the versions I would recommend for running it locally as well. To run it locally:
 
-## Learn More
+1. Clone the repository
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Navigate to the folder and run `npm install`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. `npm start`
