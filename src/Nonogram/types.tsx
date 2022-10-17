@@ -19,7 +19,7 @@ export interface HintBoxProps {
 
 //////////////////////////////////////////
 
-export type CellCheckedVals = 'unchecked' | 'filled' | 'marked';
+export type CellCheckedVals = 'unchecked' | 'filled' | 'marked' | 'filled-wrong' | 'marked-wrong';
 
 export interface CellObj {
     checked: CellCheckedVals

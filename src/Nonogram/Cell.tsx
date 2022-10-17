@@ -7,13 +7,21 @@ const Cell: FC<CellProps> = ({ data }) => {
         <div
             className={
                 'flex h-8 w-8 m-1 border border-solid border-white rounded-sm'
-                    + (data.checked === 'unchecked' ? ' cursor-pointer' : '')
-                    + (data.checked === 'filled' ? ' bg-white' : '')
+                + (data.checked === 'unchecked' ? ' cursor-pointer' : '')
+                + (data.checked === 'filled' ? ' bg-white' : '')
+                + (data.checked === 'filled-wrong' ? ' bg-red-400' : '')
             }
             onClick={data.onClick}
         >
-            {data.checked === 'marked' && (
-                <RiCloseFill className='flex m-auto' size={32} />
+            {(data.checked === 'marked' || data.checked === 'marked-wrong') && (
+                <RiCloseFill
+                    className={
+                        'flex m-auto'
+                        + (data.checked === 'marked' ? ' text-white' : '')
+                        + (data.checked === 'marked-wrong' ? ' text-red-400' : '')
+                    }
+                    size={32}
+                />
             )}
         </div>
     );

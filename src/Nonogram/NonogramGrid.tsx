@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from 'react';
-import { RiCloseFill } from 'react-icons/ri';
+import { RiCloseFill, RiHeartFill, RiHeartLine } from 'react-icons/ri';
 import { NonogramGridProps, CellCheckedVals } from './types';
 import HintBox from './HintBox';
 import Cell from './Cell';
@@ -13,8 +13,10 @@ const NonogramGrid: FC<NonogramGridProps> = ({ data }) => {
             startingSolution[i].push('unchecked');
         }
     }
+
     const [cursorType, setCursorType] = useState('fill');
     const [solution, setSolution] = useState(startingSolution);
+    const [numErrors, setNumErrors] = useState(0);
     const [puzzleSolved, setPuzzleSolved] = useState(false);
 
     const getColHints = () => {
@@ -41,7 +43,7 @@ const NonogramGrid: FC<NonogramGridProps> = ({ data }) => {
         let allMatch = true;
         for (let i = 0; i < solution.length; i++) {
             for (let j = 0; j < solution[i].length; j++) {
-                if (data.key[i][j] && solution[i][j] !== 'filled') {
+                if (data.key[i][j] && solution[i][j] !== 'filled' && solution[i][j] !== 'filled-wrong') {
                     allMatch = false;
                     break;
                 }
@@ -78,19 +80,27 @@ const NonogramGrid: FC<NonogramGridProps> = ({ data }) => {
                                     data={{
                                         checked: solution[rowNum][colNum],
                                         onClick: () => {
-                                            const tempSolution: CellCheckedVals[][] = [];
-                                            for (let i = 0; i < solution.length; i++) {
-                                                tempSolution.push([]);
-                                                for (let j = 0; j < solution[i].length; j++) {
-                                                    tempSolution[i][j] = solution[i][j];
+                                            if (numErrors < 3 && !puzzleSolved) {
+                                                const tempSolution: CellCheckedVals[][] = [];
+                                                for (let i = 0; i < solution.length; i++) {
+                                                    tempSolution.push([]);
+                                                    for (let j = 0; j < solution[i].length; j++) {
+                                                        tempSolution[i][j] = solution[i][j];
+                                                    }
                                                 }
+                                                if (cursorType === 'fill' && status) {
+                                                    tempSolution[rowNum][colNum] = 'filled';
+                                                } else if (cursorType === 'fill' && !status) {
+                                                    tempSolution[rowNum][colNum] = 'marked-wrong';
+                                                    setNumErrors(numErrors + 1);
+                                                } else if (cursorType === 'mark' && !status) {
+                                                    tempSolution[rowNum][colNum] = 'marked';
+                                                } else if (cursorType === 'mark' && status) {
+                                                    tempSolution[rowNum][colNum] = 'filled-wrong';
+                                                    setNumErrors(numErrors + 1);
+                                                }
+                                                setSolution(tempSolution);
                                             }
-                                            if (cursorType === 'fill' && status) {
-                                                tempSolution[rowNum][colNum] = 'filled';
-                                            } else if (cursorType === 'mark' && !status) {
-                                                tempSolution[rowNum][colNum] = 'marked';
-                                            }
-                                            setSolution(tempSolution);
                                         }
                                     }}
                                     key={'cell' + rowNum + colNum}
@@ -107,10 +117,37 @@ const NonogramGrid: FC<NonogramGridProps> = ({ data }) => {
                 <div className={'flex w-12 h-12 rounded-full' + (cursorType === 'mark' ? ' bg-white' : '')}>
                     <RiCloseFill className={'flex m-auto ' + (cursorType === 'mark' ? 'text-slate-900' : 'text-white')} size={40} />
                 </div>
+                <div className='flex w-12 h-12' />
+                <div className='flex w-12 h-12'>
+                    {numErrors < 3 ? (
+                        <RiHeartFill className='flex m-auto text-red-400' size={40} />
+                    ) :(
+                        <RiHeartLine className='flex m-auto text-red-400' size={40} />
+                    )}
+                </div>
+                <div className='flex w-12 h-12'>
+                    {numErrors < 2 ? (
+                        <RiHeartFill className='flex m-auto text-red-400' size={40} />
+                    ) :(
+                        <RiHeartLine className='flex m-auto text-red-400' size={40} />
+                    )}
+                </div>
+                <div className='flex w-12 h-12'>
+                    {numErrors < 1 ? (
+                        <RiHeartFill className='flex m-auto text-red-400' size={40} />
+                    ) :(
+                        <RiHeartLine className='flex m-auto text-red-400' size={40} />
+                    )}
+                </div>
             </div>
             {puzzleSolved && (
                 <p className='flex m-auto text-3xl text-green-400'>
                     Congratulations! You solved the puzzle!
+                </p>
+            )}
+            {numErrors >= 3 && (
+                <p className='flex m-auto text-3xl text-red-400'>
+                    Too many errors! You lose!
                 </p>
             )}
         </div>
