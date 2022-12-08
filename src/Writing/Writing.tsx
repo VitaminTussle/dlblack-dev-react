@@ -50,6 +50,13 @@ const Writing = () => {
             warning: null,
             download: 'three.pdf'
         },
+        {
+            title: 'Clementine',
+            type: 'Poem',
+            synopsis: null,
+            warning: null,
+            download: 'clementine.pdf'
+        }
     ];
 
     return (
