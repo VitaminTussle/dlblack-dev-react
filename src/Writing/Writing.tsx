@@ -16,18 +16,16 @@ const Writing = () => {
         {
             title: 'Edible Flora',
             type: 'Flash Fiction',
-            synopsis: 'A faceless narrator contemplates the fragility of nature. ' +
-                'This story is not available for download, as it is currently up for consideration in several literary magazine submissions.',
+            synopsis: 'A faceless narrator contemplates the fragility of nature.',
             warning: null,
-            download: null //'edible_flora.pdf'
+            download: 'edible_flora.pdf'
         },
         {
             title: 'Ant Farm',
             type: 'Short Story',
-            synopsis: 'Two identity-less humans in a dystopian future discover the nature of their world and the fates of many of those that came before them. ' +
-                'This story is not available for download, as it is currently up for consideration in several literary magazine submissions.',
+            synopsis: 'Two identity-less humans in a dystopian future discover the nature of their world and the fates of many of those that came before them.',
             warning: 'This story features a suicide as a plot point. Reader discretion is advised.',
-            download: null //'ant_farm.pdf'
+            download: 'ant_farm.pdf'
         },
         {
             title: 'Momentum Malediction',

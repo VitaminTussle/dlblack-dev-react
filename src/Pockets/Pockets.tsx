@@ -134,8 +134,8 @@ const Pockets = () => {
                     Isn't that simple? Let hot dogs and sandwiches be hot dogs and sandwiches.
                     Whatever you would call them at first glance is fine. Their connection comes in the fact that they are both Pockets.
                     A gyro is a Pocket, regardless of the degree to which it is enclosed. An Uncrustable is a Pocket.
-                    Pizza is a Pocket. A quesadilla is a pocket. A taco is a pocket. Pigs in a blanket? Pockets.
-                    Falafel pitas? Pockets. Burritos? Pockets. Pop-Tarts? Pockets. Dumplings? Pockets. Hot Pockets? It's in the name! Q.E.D. ▢
+                    A slice of pizza is a Pocket. A quesadilla is a pocket. A taco is a pocket. Pigs in a blanket? Pockets.
+                    Falafel pitas? Pockets. Burritos? Pockets. Pop-Tarts? Pockets. Hot Pockets? It's in the name! Q.E.D. ▢
                 </p>
                 <br />
                 <p className='flex'>
@@ -152,9 +152,9 @@ const Pockets = () => {
                     Maki (roll) sushi is not a pocket for several reasons. First of all, traditional maki sushi has seaweed on the outside, not rice.
                     Second of all, you can remove the rice and still have perfectly good maki. It's just probably a little crunchier.
                     Third, although it is traditionally eaten by hand, modern common practice is to eat it with chopsticks.
-                    Maki sushi is not a Pocket, but nigiri sushi, being defined by a bed of rice and a finger food, is a Pocket.
+                    Maki sushi is not a Pocket, but nigiri sushi, being defined by a bed of rice and by being a finger food, is a Pocket.
                     Finally, a corn dog is not a Pocket. We went back and forth on this one, but since you hold it by the stick and not the food itself,
-                    and a corn-less corndog is still recognizable (even if it's more of a weiner on a stick), it's not a Pocket.
+                    and a corn-less corndog is still recognizable (even if it's more of a wiener on a stick), it's not a Pocket.
                 </p>
                 <br />
                 <p className='flex'>
