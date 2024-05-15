@@ -29,7 +29,7 @@ const Project: FC<ProjectProps> = ({data}) => {
                 </div>
                 <div className='mb-2'>
                     <span className='font-semibold'>Description:&nbsp;</span>
-                    {data.description}
+                    <span dangerouslySetInnerHTML={{ __html: data.description }} /> {/* This allows for inset links within the description string */}
                 </div>
                 <div className='flex flex-row justify-between items-center mb-2'>
                     <div>

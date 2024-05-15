@@ -16,6 +16,16 @@ const Code = () => {
             link: 'https://github.com/VitaminTussle/dlblack-dev-react'
         },
         {
+            name: 'angora Band Website',
+            image: 'angora-screenshot.png',
+            status: 'Complete!',
+            description: "The official website for an old friend's new band, angora, hosted at " +
+                "<a href='https://angora.band' target='_blank' rel='noopener noreferrer' style='text-decoration: underline;'>angora.band</a>. " +
+                "An exercise in UX design, responsive components, and fluid frontend implementation.",
+            technologies: ['React', 'Typescript', 'Node', 'Tailwind'],
+            link: 'https://github.com/angora-band/angora-site'
+        },
+        {
             name: 'Arkadia Website and Administration App',
             image: 'arkadia.png',
             status: 'Ongoing',

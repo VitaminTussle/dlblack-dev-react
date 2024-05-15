@@ -7,6 +7,20 @@ const Writing = () => {
     // this array will eventually be fetched from an API
     const pieces: WritingPieceObj[] = [
         {
+            title: 'Peach',
+            type: 'Short Story',
+            synopsis: 'A meta psychological thriller story. Someone awakens from a strange dream, and then tries to spread a virus to their friend...?',
+            warning: null,
+            download: 'peach.pdf'
+        },
+        {
+            title: 'Ant Farm',
+            type: 'Short Story',
+            synopsis: 'Two identity-less humans in a dystopian future discover the nature of their world and the fates of many of those that came before them.',
+            warning: 'This story features a suicide as a plot point. Reader discretion is advised.',
+            download: 'ant_farm.pdf'
+        },
+        {
             title: 'Chocolate Milk Day',
             type: 'Short Story',
             synopsis: 'A pair of college friends/roommates enjoy the little things in life, including a trip down memory lane to the place they met.',
@@ -19,13 +33,6 @@ const Writing = () => {
             synopsis: 'A faceless narrator contemplates the fragility of nature.',
             warning: null,
             download: 'edible_flora.pdf'
-        },
-        {
-            title: 'Ant Farm',
-            type: 'Short Story',
-            synopsis: 'Two identity-less humans in a dystopian future discover the nature of their world and the fates of many of those that came before them.',
-            warning: 'This story features a suicide as a plot point. Reader discretion is advised.',
-            download: 'ant_farm.pdf'
         },
         {
             title: 'Momentum Malediction',
