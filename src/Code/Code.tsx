@@ -54,7 +54,7 @@ const Code = () => {
                         Code Projects
                     </p>
                     <p>
-                        This list is of course non-exhaustive. For more projects, check out my&nbsp;
+                        This list is non-exhaustive. For more projects, check out my&nbsp;
                         <a href='https://github.com/VitaminTussle' target='_blank' rel='noreferrer' className='underline'>
                             main Github page
                         </a>

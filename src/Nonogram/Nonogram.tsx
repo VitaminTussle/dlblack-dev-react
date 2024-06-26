@@ -91,7 +91,7 @@ const Nonogram = () => {
                                     </p>
                                     <br />
                                     <p className='flex'>
-                                        Right now, there's only one puzzle to solve and there's no error detection. The next site update will include many more puzzles, the ability to create your own, and error detection so it's a real challenge!
+                                        Right now, there's only one puzzle to solve. The next site update will include many more puzzles and the ability to create your own!
                                     </p>
                                     <br />
                                     <p className='flex'>

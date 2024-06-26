@@ -134,7 +134,7 @@ const Pockets = () => {
                     Isn't that simple? Let hot dogs and sandwiches be hot dogs and sandwiches.
                     Whatever you would call them at first glance is fine. Their connection comes in the fact that they are both Pockets.
                     A gyro is a Pocket, regardless of the degree to which it is enclosed. An Uncrustable is a Pocket.
-                    A slice of pizza is a Pocket. A quesadilla is a pocket. A taco is a pocket. Pigs in a blanket? Pockets.
+                    A slice of pizza is a Pocket. A quesadilla is a Pocket. A taco is a Pocket. Pigs in a blanket? Pockets.
                     Falafel pitas? Pockets. Burritos? Pockets. Pop-Tarts? Pockets. Hot Pockets? It's in the name! Q.E.D. ▢
                 </p>
                 <br />

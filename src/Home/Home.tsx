@@ -16,11 +16,11 @@ const Home = () => {
         He then went on to learn algorithmic Java, from which he built several cell simulators such as epidemiology and Conway's game of life.
         From there, he graduated high school two years early at the age of 16 and proceeded to excell in his studies at the University of Arkansas.
         During college, he learned a bit of C++, a lot of Python, some R, some C#, more Java in the forms of Spring Boot and Android Studio, and, through internships, production JavaScript and TypeScript.
-        During his college yearsEvery semester, he made sure to participate in the 24-hour J.B. Hunt hackathon with his friends, achieving ranks in the top four teams four out of six times, and even pulling off a first place win once.
+        He made sure to participate in the 24-hour J.B. Hunt hackathon with his friends every semester, achieving ranks in the top four teams four out of six times, and even pulling off a first place win once.
         Deuce then graduated as a First-Ranked Senior Scholar with a Bachelor's of Science in Computer Science at a 4.0 GPA in May of 2022 at 19 years old.
         In production environments, he has worked on everything from C#'s ASP.NET Core command line applications with R and Microsoft SQL Server integrations to more standard React and Angular projects with backends ranging from Spring Boot to Koa.js, and with databases ranging from PostGreSQL to MongoDB.
         He started off his full-time career as a Software Engineer I at SupplyPike, a retail and CPG logistics company.
-        Since then, he has moved on, and is currently a Software Engineer at RXNT, a medtech company focused on electronic prescriptions and doctor appointment scheduling.`;
+        Since then, he has moved on, and is currently a Software Engineer III at RXNT, a medtech company focused on electronic prescriptions and doctor appointment scheduling.`;
     
     const musicContent = `Outside of programming, Deuce also enjoys writing sheet music.
         Some pieces are arrangements while others are original pieces.
@@ -29,12 +29,12 @@ const Home = () => {
     
     const writingContent = `Deuce prides himself on his linguistic skills, especially in writing eloquent and correct English.
         He has applied these skills to the worlds of poetry and short stories since high school, and some of his works are available for viewing on this site.
-        He also has plans to use National Novel Writing Month 2023 to attempt to write a full-length low-fantasy novel.
+        He also successfully completed National Novel Writing Month in November of 2023 with the first 50,000 words of a low-fantasy novel that he plans to complete soon.
         Outside of English, he also studied Mandarin Chinese for five years.
         During that time, he participated in a service- and culture-focused trip to Beijing and Yangzhou in China.
         He got to see all of the famous landmarks and got to help a combination school/orphanage for impaired children clean and update their facilities.
-        Deuce takes interest in languages in general, really.
-        He studied German for a semester and hopes to learn Greek, Hawaiian, Irish, and many more languages.
+        Deuce takes an interest in languages in general, really.
+        He studied German for a semester and hopes to learn Dutch, Greek, Hawaiian, Irish, and many more languages.
         He's already been lucky enough to travel around the world quite a bit, but using these skills, he hopes to do so even more.`;
     
     const pocketsContent = `Deuce has many controversial opinions on food. He will be taking no questions.`;
@@ -45,7 +45,7 @@ const Home = () => {
             <div className='flex' >
                 <div className='flex flex-col xl:flex-row items-center xl:items-start justify-between xl:mx-32 mt-16 h-full'>
                     <div className='w-1/2 xl:w-1/3 mb-8'>
-                        <img src={images['me.jpg']} alt='deuce dressed and posed professionally' className='flex' />
+                        <img src={images['me.jpg']} alt='deuce in hiking clothes leaned up against a tree' className='flex' />
                     </div>
                     <div className='w-3/4 xl:w-1/2 h-full text-white text-xl'>
                         <InfoContainer label='BIO' content={bioContent} />
@@ -66,7 +66,7 @@ const Home = () => {
                             <div>
                                 <a href='https://www.linkedin.com/in/dlblack-dev/' target='_blank' rel='noreferrer' className='flex flex-row items-center hover:underline'>
                                     <img src={images['linkedin_logo_white.png']} alt='linkedin logo' className='w-1/4 mr-4' />
-                                    /dlblack-dev
+                                    /in/dlblack-dev
                                 </a>
                             </div>
                         </div>
